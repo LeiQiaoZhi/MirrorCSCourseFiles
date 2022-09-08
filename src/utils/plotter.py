@@ -6,9 +6,10 @@ from utils.logger import Logger
 
 
 class PlotData:
-    def __init__(self, xlabel, ylabel, kwargs={}) -> None:
+    def __init__(self, title, xlabel, ylabel, kwargs={}) -> None:
         self.X = []
         self.Y = []
+        self.title = title
         self.xlabel = xlabel
         self.ylabel = ylabel
         self.kwargs = kwargs
@@ -18,9 +19,10 @@ class PlotData:
         self.Y.append(y)
 
     def get_save_path(self) -> str:
-        parent_dir = os.path.dirname(os.path.realpath(__file__))
+        parent_dir = os.path.dirname(
+            os.path.dirname(os.path.realpath(__file__)))
         save_path = os.path.join(os.path.dirname(parent_dir), 'plots',
-                                 f'{self.ylabel}_vs_{self.xlabel}.png')
+                                 f'{self.title}.png')
         return save_path
 
     def plot(self):
@@ -56,20 +58,22 @@ class ScatterData(PlotData):
 
 
 class Plotter:
-    def __init__(self) -> None:
+    def __init__(self, save_path=None) -> None:
         self.plot_data: Dict[str, PlotData] = {}
 
     def add_scatter(self, graph_name, x, y, xlabel="", ylabel="", kwargs={}) -> None:
         if graph_name not in self.plot_data.keys():
-            self.plot_data[graph_name] = ScatterData(xlabel, ylabel, kwargs)
+            self.plot_data[graph_name] = ScatterData(
+                graph_name, xlabel, ylabel, kwargs)
         self.plot_data[graph_name].add_entry(x, y)
 
-    def add_scalar(self, graph_name, x, y, xlabel="", ylabel="", kwargs={}) -> None:
+    def add_scalar(self, graph_name: str, x, y, xlabel="", ylabel="", kwargs={}) -> None:
         '''
         for normal line plots
         '''
         if graph_name not in self.plot_data.keys():
-            self.plot_data[graph_name] = LineData(xlabel, ylabel, kwargs)
+            self.plot_data[graph_name] = LineData(
+                graph_name, xlabel, ylabel, kwargs)
         self.plot_data[graph_name].add_entry(x, y)
 
     def plot(self) -> None:

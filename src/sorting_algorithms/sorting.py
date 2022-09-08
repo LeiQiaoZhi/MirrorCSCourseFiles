@@ -18,5 +18,26 @@ def selection_sort(list_to_sort: List[int]) -> None:
         list_to_sort[min_index] = temp
 
 
-def insertion_sort(list_to_sort: List[int]) -> List[int]:
+# TODO 1
+def insertion_sort(list_to_sort: List[int]) -> None:
+    pass
+
+
+# TODO 2
+def bubble_sort(list_to_sort: List[int]) -> None:
+    pass
+
+
+# TODO 3
+def merge_sort(list_to_sort: List[int]) -> List[int]:
+    '''
+    Note: this algorithm is not in-place
+    sorting is not done in place
+    return the sorted list
+    '''
+    pass
+
+
+# TODO 4
+def quick_sort(list_to_sort: List[int]) -> None:
     pass
