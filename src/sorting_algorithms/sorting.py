@@ -41,3 +41,22 @@ def merge_sort(list_to_sort: List[int]) -> List[int]:
 # TODO 4
 def quick_sort(list_to_sort: List[int]) -> None:
     pass
+
+
+### Week 2 -- Linear Sorts ###
+
+def count_sort(list_to_sort: List[int], key_fn=lambda x: x) -> List[int]:
+    '''
+    key_fn is a function we use to get the key for comparision
+    for example, if we are to compare item x and y, we compare key_fn(x) and key_fn(y)
+    it is useful in radix sort, when we need to compare numbers based on a digit
+    '''
+    pass
+
+
+def radix_sort(list_to_sort: List[int]) -> List[int]:
+    '''
+    find max number of digits before sorting
+    we can just use the count_sort implemented above, by giving it a suitable key_fn 
+    '''
+    pass

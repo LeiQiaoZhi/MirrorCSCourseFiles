@@ -6,8 +6,10 @@ def main():
     fig, ax = plt.subplots(1, 1, figsize=(8, 8))
 
     # tests
-    algos = [selection_sort, insertion_sort,
-             bubble_sort, merge_sort, quick_sort]
+    # LESSON 1
+    # algos = [selection_sort, insertion_sort, bubble_sort, merge_sort, quick_sort]
+    # LESSON 2
+    algos = [count_sort, radix_sort]
     for sort_algo in algos:
         # plot_sort_using_plotter(sort_algo, list(range(1000, 3000, 1000)))
         times, lengths = get_time_used(
@@ -22,7 +24,7 @@ def main():
     ax.legend()
     ax.set_title("Time used vs Lengths")
     plt.savefig(os.path.join(os.path.dirname(os.path.dirname(
-        os.path.dirname(os.path.realpath(__file__)))), "plots", "Time used vs Lengths"))
+        os.path.dirname(os.path.realpath(__file__)))), "plots", "Time used vs Lengths (Linear Sorts)"))
     # plotter.plot()
 
 
