@@ -41,7 +41,7 @@ Find the union, and intersection of:
 
 a) $\{ 1, 2, 3, 4,5\}$ and $\{−1, 1, 3, 5,7\}$
 
-b) $\{ x ∈ \bold{R} | x > 7\}$ and $\{ x ∈ \bold{R} | x > 5\}$
+b) $\{ x ∈ \text{R} | x > 7\}$ and $\{ x ∈ \text{R} | x > 5\}$
 
 ### Proof question
 
@@ -52,7 +52,7 @@ prove the universal properties of set union and intersection, for sets $A,B \sub
 2. $\forall X\subseteq D, X\subseteq A \text{ and } X\subseteq B \iff X \subseteq (A\cap B)$
 
 Hints:
-- remember how to prove '$\iff$' (two steps)
+- remember how to prove 'if and only if' (two steps)
 - use the definitions of $\cup$ and $\cap$
 	1. $\forall x, x\in A\cup B \iff x\in A \vee x\in B$ 
 	2. $\forall x, x\in A\cap B \iff x\in A \wedge x\in B$ 
