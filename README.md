@@ -33,7 +33,7 @@ to test them
 
 ## Lesson 4 Homework
 
-> 完成这次的作业后请把作业发到我的企业微信。前3次作业已完成的同学请把test通过的截图（或者代码截图）发到我的企业微信。谢谢。
+> **作业提交：**完成这次的作业后请把作业发到我的企业微信。前3次作业已完成的同学请把test通过的截图（或者代码截图）发到我的企业微信。谢谢。
 
 ### Warm up question
 
@@ -47,7 +47,7 @@ b) $\{ x ∈ \text{R} | x > 7\}$ and $\{ x ∈ \text{R} | x > 5\}$
 
 #### Question 1
 
-prove the universal properties of set union and intersection, for sets $A,B \subseteq D$ ($D$ is the domain)
+prove the universal properties of set union and intersection, for sets $A,B \subseteq D$ (D is the domain)
 1. $\forall X\subseteq D. A \cup B \subseteq X \iff (A \subseteq X \text{ and } B \subseteq X)$
 2. $\forall X\subseteq D, X\subseteq A \text{ and } X\subseteq B \iff X \subseteq (A\cap B)$
 
@@ -60,10 +60,8 @@ Hints:
 	- $A\subseteq B\iff \forall a \in A,a\in B$
 
 #### Question 2
-
-
 	
-prove the universal properties of big union and big intersection, for a family of sets  $F \subseteq P(D)$ ($D$ is the domain)
+prove the universal properties of big union and big intersection, for a family of sets  $F \subseteq P(D)$ (D is the domain)
 1. $\forall X \subseteq D. \bigcup F \subseteq X \iff (\forall S \in F, S \subseteq X)$
 2. $\forall X \subseteq D. X \subseteq \bigcap F \iff (\forall S\in F, X\subseteq S)$
 
