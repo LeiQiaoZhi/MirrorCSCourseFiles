@@ -86,6 +86,8 @@ go to the [online editor](https://www.programiz.com/sql/online-compiler/)
 
 query the table with columns: cutomer - item - status
 
+**NOTE**: assume `order_id` is the same as `shipping_id`
+
 result should look like:
 
 ![table screenshot](imgs/table_screenshot.png)
