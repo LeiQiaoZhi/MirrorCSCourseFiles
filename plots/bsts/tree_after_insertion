@@ -1,0 +1,4 @@
+graph "Binary Tree" {
+	node [shape=record]
+	4 [label="<f0> k:4 | <f1> v:4"]
+}
