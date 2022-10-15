@@ -70,3 +70,24 @@ prove the universal properties of big union and big intersection, for a family o
 Hints:
 - $F$ is a set of sets
 - the proof is quite similar to the previous proof
+
+### Lesson 5 Homework
+
+#### Relations Question
+
+Let A={1,2,3,4}, B={a,b,c,d} and C={x,y,z}. 
+Let R = {(1,a),(2,d),(3,a),(3, b),(3,d)}: A → B and S = {(b, x),(b, y),(c, y),(d,z)}: B → C.
+    
+Draw the internal diagrams of the relations. What is the composition S ◦ R : A → C.
+
+#### SQL Question
+
+go to the [online editor](https://www.programiz.com/sql/online-compiler/)
+
+query the table with columns: cutomer - item - status
+
+result should look like:
+
+![table screenshot](imgs/table_screenshot.png)
+
+
